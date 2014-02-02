@@ -14,6 +14,11 @@
             <gbindexq_resource>
                 <class>Gbinside_Indexqueue_Model_Resource</class>
             </gbindexq_resource>
+            <index>
+                <rewrite>
+                    <indexer>Gbinside_Indexqueue_Model_Rewrite</indexer>
+                </rewrite>
+            </index>
         </models>
         <blocks>
             <gbindexq>
@@ -33,4 +38,18 @@
             </gbindexq_setup>
         </resources>
     </global>
+
+    <queues>
+        <index_queue>
+            <label>Index Queue</label>
+            <class>gbindexq/queueHandler</class>
+            <workers>
+                <indexQueue>
+                    <class>gbindexq/worker</class>
+                    <method>indexQueue</method>
+                </indexQueue>
+            </workers>
+        </index_queue>
+    </queues>
+
 </config>
