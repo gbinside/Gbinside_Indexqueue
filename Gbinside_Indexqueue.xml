@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gbinside_Indexqueue>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Lilmuckers_Queue/>
+
+            </depends>
+        </Gbinside_Indexqueue>
+    </modules>
+</config>

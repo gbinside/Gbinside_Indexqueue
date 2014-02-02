@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gbinside_Indexqueue>
+            <version>0.1.0</version>
+        </Gbinside_Indexqueue>
+    </modules>
+    <global>
+        <models>
+            <gbindexq>
+                <class>Gbinside_Indexqueue_Model</class>
+                <resourceModel>gbindexq_resource</resourceModel>
+            </gbindexq>
+            <gbindexq_resource>
+                <class>Gbinside_Indexqueue_Model_Resource</class>
+            </gbindexq_resource>
+        </models>
+        <blocks>
+            <gbindexq>
+                <class>Gbinside_Indexqueue_Block</class>
+            </gbindexq>
+        </blocks>
+        <helpers>
+            <gbindexq>
+                <class>Gbinside_Indexqueue_Helper</class>
+            </gbindexq>
+        </helpers>
+        <resources>
+            <gbindexq_setup>
+                <setup>
+                    <module>Gbinside_Indexqueue</module>
+                </setup>
+            </gbindexq_setup>
+        </resources>
+    </global>
+</config>
